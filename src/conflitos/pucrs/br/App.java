@@ -6,6 +6,7 @@ public class App {
 
     public static void main(String[] args) {
 
+        // Lista usada nos testes
         ArrayList<Integer> lista = new ArrayList<>();
 
         lista.add(5);
@@ -14,13 +15,32 @@ public class App {
         lista.add(7);
         lista.add(5);
 
+        // Criando objeto da classe DemoLists
         DemoLists demo = new DemoLists();
 
+        // a. Número de ocorrências
         int resultado = demo.nOcorrencias(lista, 5);
+
         System.out.println("O número 5 aparece " + resultado + " vezes.");
 
+        // c. Número de elementos repetidos
         int repetidos = demo.nroRepeat(lista);
-        System.out.println("Número de elementos repetidos: " + repetidos);
-    }
 
+        System.out.println("Número de elementos repetidos: " + repetidos);
+
+        // União de duas listas
+        ArrayList<Integer> l1 = new ArrayList<>();
+        l1.add(1);
+        l1.add(2);
+        l1.add(3);
+
+        ArrayList<Integer> l2 = new ArrayList<>();
+        l2.add(3);
+        l2.add(4);
+        l2.add(5);
+
+        ArrayList<Integer> uniao = demo.union(l1, l2);
+
+        System.out.println("União: " + uniao);
+    }
 }

@@ -32,4 +32,23 @@ public class DemoLists {
 
         return contador;
     }
+
+    ArrayList<Integer> union(ArrayList<Integer> l1, ArrayList<Integer> l2) {
+
+        ArrayList<Integer> resultado = new ArrayList<>();
+
+        for (Integer elemento : l1) {
+            if (!resultado.contains(elemento)) {
+                resultado.add(elemento);
+            }
+        }
+
+        for (Integer elemento : l2) {
+            if (!resultado.contains(elemento)) {
+                resultado.add(elemento);
+            }
+        }
+
+        return resultado;
+    }
 }
