@@ -18,4 +18,18 @@ public class DemoLists {
         return contador;
     }
 
+    //c. Método que retorna o número de elementos repetidos em l
+    //int nroRepeat(ArrayList< Integer > l)
+    int nroRepeat(ArrayList<Integer> l) {
+
+        int contador = 0;
+
+        for (int i = 0; i < l.size(); i++) {
+            if (l.indexOf(l.get(i)) != i) {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
 }

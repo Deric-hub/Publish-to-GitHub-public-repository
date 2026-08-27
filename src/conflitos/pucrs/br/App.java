@@ -19,6 +19,8 @@ public class App {
         int resultado = demo.nOcorrencias(lista, 5);
         System.out.println("O número 5 aparece " + resultado + " vezes.");
 
+        int repetidos = demo.nroRepeat(lista);
+        System.out.println("Número de elementos repetidos: " + repetidos);
     }
 
 }
