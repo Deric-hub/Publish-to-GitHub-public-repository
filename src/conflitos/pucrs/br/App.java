@@ -33,7 +33,7 @@ public class App {
         System.out.println("Número de elementos repetidos: " + repetidos);
 
         // d. Lista de elementos repetidos
-        ArrayList<Integer> listaRepetidos = listRepeat(lista);
+        ArrayList<Integer> listaRepetidos = demo.listRepeat(lista);
         System.out.println("Elementos repetidos: " + listaRepetidos);
         
         // União de duas listas
@@ -52,7 +52,7 @@ public class App {
         System.out.println("União: " + uniao);
 
         // f. Intersecção de duas listas
-        ArrayList<Integer> interseccao = intersect(l1, l2);
+        ArrayList<Integer> interseccao = demo.intersect(l1, l2);
         System.out.println("Intersecção: " + interseccao);
     }
 }
