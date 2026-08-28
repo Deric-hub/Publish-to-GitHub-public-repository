@@ -52,7 +52,7 @@ public class DemoLists {
         return resultado;
     }
 
-    private static ArrayList<Integer> listRepeat(ArrayList<Integer> lista) {
+    public ArrayList<Integer> listRepeat(ArrayList<Integer> lista) {
         ArrayList<Integer> repetidos = new ArrayList<>();
 
         for (Integer elemento : lista) {
@@ -65,7 +65,7 @@ public class DemoLists {
         return repetidos;
     }
 
-    private static ArrayList<Integer> intersect(ArrayList<Integer> l1, ArrayList<Integer> l2) {
+     public ArrayList<Integer> intersect(ArrayList<Integer> l1, ArrayList<Integer> l2) {
         ArrayList<Integer> interseccao = new ArrayList<>();
 
         for (Integer elemento : l1) {
