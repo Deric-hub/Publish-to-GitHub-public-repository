@@ -51,4 +51,18 @@ public class DemoLists {
 
         return resultado;
     }
+
+    private static ArrayList<Integer> listRepeat(ArrayList<Integer> lista) {
+        ArrayList<Integer> repetidos = new ArrayList<>();
+
+        for (Integer elemento : lista) {
+            if (lista.indexOf(elemento) != lista.lastIndexOf(elemento)
+                    && !repetidos.contains(elemento)) {
+                repetidos.add(elemento);
+            }
+        }
+
+        return repetidos;
+    }
+
 }
