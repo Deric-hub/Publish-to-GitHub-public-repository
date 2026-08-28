@@ -32,7 +32,10 @@ public class App {
 
         System.out.println("Número de elementos repetidos: " + repetidos);
 
-
+        // d. Lista de elementos repetidos
+        ArrayList<Integer> listaRepetidos = listRepeat(lista);
+        System.out.println("Elementos repetidos: " + listaRepetidos);
+        
         // União de duas listas
         ArrayList<Integer> l1 = new ArrayList<>();
         l1.add(1);
@@ -48,5 +51,18 @@ public class App {
 
         System.out.println("União: " + uniao);
 
+    }
+
+    private static ArrayList<Integer> listRepeat(ArrayList<Integer> lista) {
+        ArrayList<Integer> repetidos = new ArrayList<>();
+
+        for (Integer elemento : lista) {
+            if (lista.indexOf(elemento) != lista.lastIndexOf(elemento)
+                    && !repetidos.contains(elemento)) {
+                repetidos.add(elemento);
+            }
+        }
+
+        return repetidos;
     }
 }
