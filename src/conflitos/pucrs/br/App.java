@@ -51,6 +51,9 @@ public class App {
 
         System.out.println("União: " + uniao);
 
+        // f. Intersecção de duas listas
+        ArrayList<Integer> interseccao = intersect(l1, l2);
+        System.out.println("Intersecção: " + interseccao);
     }
 
     private static ArrayList<Integer> listRepeat(ArrayList<Integer> lista) {
@@ -64,5 +67,17 @@ public class App {
         }
 
         return repetidos;
+    }
+
+    private static ArrayList<Integer> intersect(ArrayList<Integer> l1, ArrayList<Integer> l2) {
+        ArrayList<Integer> interseccao = new ArrayList<>();
+
+        for (Integer elemento : l1) {
+            if (l2.contains(elemento) && !interseccao.contains(elemento)) {
+                interseccao.add(elemento);
+            }
+        }
+
+        return interseccao;
     }
 }
