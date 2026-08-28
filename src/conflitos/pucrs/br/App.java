@@ -55,20 +55,7 @@ public class App {
         ArrayList<Integer> interseccao = intersect(l1, l2);
         System.out.println("Intersecção: " + interseccao);
     }
-
-    private static ArrayList<Integer> listRepeat(ArrayList<Integer> lista) {
-        ArrayList<Integer> repetidos = new ArrayList<>();
-
-        for (Integer elemento : lista) {
-            if (lista.indexOf(elemento) != lista.lastIndexOf(elemento)
-                    && !repetidos.contains(elemento)) {
-                repetidos.add(elemento);
-            }
-        }
-
-        return repetidos;
-    }
-
+    
     private static ArrayList<Integer> intersect(ArrayList<Integer> l1, ArrayList<Integer> l2) {
         ArrayList<Integer> interseccao = new ArrayList<>();
 
