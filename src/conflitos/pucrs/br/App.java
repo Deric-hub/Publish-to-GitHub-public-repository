@@ -23,10 +23,15 @@ public class App {
 
         System.out.println("O número 5 aparece " + resultado + " vezes.");
 
+        // b. Verifica se existem elementos repetidos
+        boolean repetido = demo.nroRepeat(lista) > 0;
+        System.out.println("A lista possui elementos repetidos? " + repetido);
+
         // c. Número de elementos repetidos
         int repetidos = demo.nroRepeat(lista);
 
         System.out.println("Número de elementos repetidos: " + repetidos);
+
 
         // União de duas listas
         ArrayList<Integer> l1 = new ArrayList<>();
@@ -42,5 +47,6 @@ public class App {
         ArrayList<Integer> uniao = demo.union(l1, l2);
 
         System.out.println("União: " + uniao);
+
     }
 }
